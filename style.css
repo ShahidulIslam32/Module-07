@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    padding: 45px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 39px;
+}
+.container{
+    width: 290px;
+    height: 290px;
+    border: 5px solid crimson;
+    margin-top: 15px;
+    margin-left: 70px;
+    float: left;
+
+
+}
+.container{
+    background-color: blueviolet;
+ 
+}
+.inner{
+    background-color: khaki;
+    padding: 7px;
+    width: 180px;
+    height: 180px;
+    transform: scale(0.85) rotate(45deg);
+    border:5px solid greenyellow;
+ 
+}
+.stage{
+    width:450px;
+    height: 350px;
+    background-color:#605b5b;
+    margin-top: 10px;
+    margin-left: 20px;
+    animation: back 2s ease-in-out 0.4s infinite alternate;
+    display: inline;
+    float: left;
+    padding: 28px;
+
+}
+.ball{
+    width: 140px;
+    height: 140px;
+    background-color:greenyellow;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 5s ease-in-out 0.2s infinite alternate;
+    animation-play-state: running;
+}
+
+@keyframes bounce {
+    0%{
+        background-color: limegreen;
+        left:0;
+
+    }
+    25%{
+        background-color: #ffefba;
+        left: 250px;   
+    }
+    50%{
+        background-color: crimson;
+        top:200px;   
+    } 
+    75%{
+        background-color: #a2ab58;
+           
+    }
+}
+@keyframes back {
+    from{
+        background-color: blueviolet;
+    }
+    to{
+        background-color: royalblue;
+    }
+}
+.rect{
+    width: 280px;
+    height: 280px;
+    background-color: orangered;
+    margin-left: 105px;
+    margin-top: 40px;
+    animation: blink 3s ease-in infinite 0.5s alternate;
+    display: inline;
+    float: left;
+    animation-play-state: running;
+
+}
+@keyframes blink {
+    0%{
+        background-color: green;
+        transform: scale(0.65) rotate(360deg);
+        border-radius: 50%;      
+    }
+}
+
+.text h2{
+    margin-top: 156px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: cursive;
+    animation: text 0.3s ease-in-out infinite  alternate;
+    position: relative;
+    animation-play-state: running;
+}
+@keyframes text {
+    0%{
+        color: #0072ff;
+        font-size: 44px;
+
+    }
+}
+.more{
+    width: 280px;
+    height: 280px;
+    background-color: orangered;
+    margin-left: 1050px;
+    margin-top: 40px;
+    animation: more 1s ease-in-out infinite 0.5s alternate;
+    position: relative;
+    animation-play-state: running;
+}
+@keyframes more {
+    0%{
+        background-color: lightblue;
+        left: 280px;
+    }
+}
+h3{
+    text-align: center;
+    margin-top: 180px;
+    font-size: 50px;
+    color: crimson;
+    line-height: 85px;
+}
+span{
+    text-align: center;
+    margin-top:40px;
+    display: block; 
+    font-size: 37px;
+
+}
+a{
+    text-decoration: none;
+    color: crimson;
+}
